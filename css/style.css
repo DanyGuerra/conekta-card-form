@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
+body {
+  background-color: #fffcf2;
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0;
+}
+h1 {
+  font-size: 3.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1.2rem;
+}
+h5 {
+  font-size: 1.1rem;
+}
+h6 {
+  font-size: 1rem;
+}
+p {
+  font-size: 1rem;
+}
+
+#logo {
+  max-width: 75%;
+  height: auto;
+  margin: 20px 0px 20px 30px;
+}
+
+.container {
+  margin: 0px 30px;
+}
+
+.header {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.number {
+  width: 50px;
+  border-radius: 100%;
+  background-color: #008833;
+  color: #ffffff;
+  margin-right: 20px;
+}
+
+.number > p,
+.horarios > p {
+  text-align: center;
+}
+
+button {
+  background: #008833;
+  color: #fffcf2;
+  border-radius: 50px;
+  width: 100%;
+  font-size: 24px;
+  font-family: "Roboto Condensed", sans-serif;
+  border: none;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+#formulario_btn {
+    border: 1px solid #008833;
+    background: #fffcf2;
+    color: #008833;
+}
+
+#horariosP {
+  text-align: center;
+}
+
+.horarios > div {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+
+/* clases para la elección de los horarios */
+.horario_active {
+  border: 1px solid #008833;
+  background: #008833;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.horario_inactive {
+  border: 1px solid #008833;
+  background: #ffffff;
+  color: #008833;
+  cursor: pointer;
+}
+
+.disable {
+  border: 1px solid #313131;
+  background-color: #525252;
+  color: #b4b3b3;
+}
+
+.info h2 {
+  color: #008833;
+  text-align: center;
+}
+
+.info h4 {
+  text-align: center;
+}
+
+.values,
+.keys {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info p {
+  margin: 0;
+}
+
+.values p {
+  font-size: 1.25rem;
+  color: #008833;
+}
+
+.keys p {
+  font-size: 0.75rem;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 5px 5px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 1px solid #008833;
+  background: #fffcf2;
+  font-size: 20px;
+  color: #008833;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+.inputs p {
+  font-size: 22px;
+  margin: 10px 0px;
+}
+
+.datos_tarjeta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.datos_tarjeta div {
+  width: 30%;
+}
+
+#formulario,
+#info {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.info_cita > div > div {
+    border: 1px solid #008833;
+    font-size: 1.2rem;
+    color: #008833;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.info_cita p {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+
+/* animacion de carga */
+.modal {
+  position: fixed;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 2;
+}
+
+.modal > img:nth-child(odd) {
+  fill: #ffffff;
+  width: 25%;
+  margin-bottom: 10px;
+}
+
+.modal > img:nth-child(even) {
+  fill: #ffffff;
+  width: 15%;
+  margin-bottom: 10px;
+}
+
+/* #_1 { animation: bloque 0.5s forwards infinite; }
+#_2 { animation: disco 0.5s 0.1s forwards infinite; }
+#_3 { animation: bloque 0.5s 0.2s forwards infinite; }
+#_4 { animation: disco 0.5s 0.3s forwards infinite; }
+#_5 { animation: bloque 0.5s 0.4s forwards infinite; }
+#_6 { animation: disco 0.5s 0.5s forwards infinite; }
+#_7 { animation: bloque 0.5s 0.6s forwards infinite; } */
+
+@keyframes bloque {
+  50% {
+    width: 35%;
+  }
+  100% {
+    width: 25%;
+  }
+}
+
+@keyframes disco {
+  50% {
+    width: 25%;
+  }
+  100% {
+    width: 15%;
+  }
+}
+
+input[name="foo"] {
+  cursor: pointer;
+}
+
+#modal_content {
+  background-color: #ffffff;
+  text-align: center;
+  width: 70%;
+  height: 20%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal_content > button {
+  width: 50%;
+  font-size: 18px;
+}

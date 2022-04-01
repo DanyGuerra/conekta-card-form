@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/custom-select.css" />
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.conekta.io/js/v1.0.1/conekta.js"
+    ></script>
+    <title>Pago</title>
+  </head>
+
+  <body onload="setPrecio()">
+    <div class="modal" id="modal">
+      <div id="modal_content">
+        <p id="modal_text"></p>
+        <button id="modalBtn">CERRAR</button>
+      </div>
+    </div>
+    <img id="logo" src="/img/logo.png" alt="" />
+    <div class="container">
+      <div class="header">
+        <div class="number">
+          <p>2</p>
+        </div>
+        <p>Pago</p>
+      </div>
+      <div class="info">
+        <h2 id="precio">$1,499.00</h2>
+        <div class="values">
+          <p>DEL VALLE</p>
+          <p id="mes">MARZO</p>
+        </div>
+        <div class="keys">
+          <p>SUCURSAL</p>
+          <p>MES</p>
+        </div>
+      </div>
+      <div class="inputs">
+        <div class="correo">
+          <p>Correo electrónico</p>
+          <input type="text" id="correo" />
+        </div>
+        <div class="contra">
+          <p>Contraseña</p>
+          <input type="text" />
+        </div>
+        <div class="tel">
+          <p>Teléfono</p>
+          <input type="text" id="telefono" />
+        </div>
+        <div class="nombre">
+          <p>Nombre</p>
+          <input type="text" id="tarjetahabiente" />
+        </div>
+        <div class="num_tarjtea">
+          <p>Número de tarjeta</p>
+          <input type="text" id="numero" />
+        </div>
+        <div class="datos_tarjeta">
+          <div class="mes">
+            <p>Mes</p>
+            <input type="text" id="exp-mes" />
+          </div>
+          <div class="year">
+            <p>Año</p>
+            <input type="text" id="exp-ano" />
+          </div>
+          <div class="cvv">
+            <p>CVV</p>
+            <input type="text" id="cvc" />
+          </div>
+        </div>
+      </div>
+      <button id="pagar_btn">PAGAR</button>
+    </div>
+    <!-- <script src="js/pago.js"></script> -->
+    <script src="js/pago-conekta.js"></script>
+  </body>
+</html>
